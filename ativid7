@@ -1,0 +1,16 @@
+nomeAluno = input("Informe o nome do aluno:" )
+nota1 = float( input("Informe a priemra nota: "))
+nota2 = float( input ("Informe a segunda nota: "))
+faltas = int( input ("Informe a quantidade de faltas: "))
+
+
+media = (nota1 + nota2 ) / 2
+
+print ("Media:", media)
+
+if media < 7 :
+    print ( nomeAluno, "Reprovado(a)" )
+elif faltas > 3 :
+    print (nomeAluno, "Reprovado(a)" )
+else: 
+    print (nomeAluno, "Aprovado(a),Parabéns!" )

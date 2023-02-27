@@ -1,0 +1,13 @@
+def categoria_habilitacao(qtdeRodas, peso, qtdePessoas):
+    if qtdeRodas == 2 or qtdeRodas == 3:
+        return "Categoria A"
+    elif qtdeRodas == 4 and qtdePessoas <= 8 and peso <= 3500:
+        return "Categoria B"
+    elif qtdeRodas >= 4 and qtdePessoas <= 8 and peso >= 3500 and peso <= 6000:
+        return "Categoria C"
+    elif qtdeRodas >= 4 and qtdePessoas > 8:
+        return "Categoria D"
+    elif qtdeRodas >= 4 and peso > 6000:
+        return "Categoria E"
+    else:
+        return "Categoria não encontrada"
